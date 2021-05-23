@@ -3,19 +3,19 @@
 import traceback
 import os
 
-from bot.database import Database
+from tobrot.database import Database
 from pyrogram import filters
 from pyrogram import Client
 
-from bot import (
+from tobrot import (
     DATABASE_URL,
     SESSION_NAME
 )
 
 db = Database(DATABASE_URL, SESSION_NAME)
-CURRENT_PROCESSES = {}
-CHAT_FLOOD = {}
-broadcast_ids = {}
+#URRENT_PROCESSES = {}
+#CHAT_FLOOD = {}
+#broadcast_ids = {}
 
 async def sts(c, m):
     
